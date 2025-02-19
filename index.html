@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicShare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo PicShare">
+            <p>Comparte y guarda tus imágenes favoritas</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#top">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="mailto:mauroherre07@gmail.com">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload">
+            <h2>Subir Imágenes</h2>
+            <div class="upload-options">
+                <label for="pc-upload" class="upload-label">Subir</label>
+                <input type="file" id="pc-upload" accept="image/*" class="file-input">
+                <select id="category-select" class="category-select">
+                    <option value="Anime">Anime</option>
+                    <option value="Paisajes">Paisajes</option>
+                    <option value="Autos">Autos</option>
+                    <option value="Videojuegos">Videojuegos</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Galería</h2>
+            <div class="image-container">
+                <!-- Las imágenes se agregarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Acerca de PicShare</h2>
+            <p>PicShare es una plataforma para compartir y guardar tus imágenes favoritas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PicShare | Mauricio |.Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
